@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{%block content%}
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .jumbotron{
+            background-color:black;
+            color:white;
+}
+    </style>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-12">
+                <img src="{{ url_for('video') }}" alt="video stream">
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container-fluid jumbotron">
+    <h1>Here for collecting results and analysing</h1>
+    <p>Drone LiDAR sensors are heavy and are often paired with multiple cameras. Complete units can weigh up to 7 kg. 
+        For battery-powered drones, the heavy weight reduces flight time to less than 15 minutes. The reduced flight time 
+        results in multiple flights, which increases the amount of time in the field.</p>
+    </div>
+{%endblock content%}
